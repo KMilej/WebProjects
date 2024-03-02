@@ -81,7 +81,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+<<<<<<< HEAD
     padding: 20px 80px;    /*Doesnt work , was misstake*/
+=======
+    padding: 20px 80px;
+>>>>>>> dfdf96f0c9e81bbccb8e855c07962a9e6b68fbd0
     background: #E3E6F3;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;                  /* no clue */
