@@ -532,6 +532,331 @@ footer .copyright {
   text-align: center;
 }
 
+
+/*shop page Css */
+
+#page-header {
+  background-image: url(ImageShop/Banner/b1.jpg);
+  width: 100%;
+  height: 40vh;              /*height of banner*/
+  background-size: cover;    /*make a img zoomed*/
+  display: flex;
+  justify-content: center;   /* txt inside will be in center*/
+  text-align: center;
+  flex-direction: column;    /*this put a text in the middle of banner*/
+  padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+  color: #fff;
+}
+
+#pagination {
+  text-align: center;
+}
+
+#pagination a {                 /*change number appearance*/
+  text-decoration: none;
+  background-color: #088178;
+  padding: 15px 20px;            /*top bottom, left right*/
+  border-radius: 4px;             /*make a rounded corners*/
+  color: #fff;
+  font-weight: 600;               /*how fat are numbers*/
+}
+
+#pagination a i {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#productdetails {
+  display: flex;
+  padding-top: 20px;
+
+
+}
+
+
+/* Single Product Section */
+
+#productdetails .single-product-image {
+  width: 40%;
+  margin-right: 50px;
+}
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 24%;    /*make something like padding but still keep left side equal*/
+  cursor: pointer;
+
+}
+
+#productdetails .single-product-details {
+  width: 50%;
+  padding: 30px;
+}
+
+#productdetails .single-product-details h4 {
+  padding: 40px 0 20px 0;
+}
+
+#productdetails .single-product-details h2 {
+  font-size: 26px;
+}
+
+#productdetails .single-product-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+#productdetails .single-product-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#productdetails .single-product-details input:focus {
+  outline: none;
+}
+
+#productdetails .single-product-details button {
+  background-color: #088178;
+  color: #fff;
+}
+
+#productdetails .single-product-details span {
+  line-height: 25px;
+}
+
+/*blog Page section*/
+
+#page-header.blog-header {
+  background-image: url("images/Banners/b19.jpg");
+}
+
+#blog {
+  padding: 150px 150px 0 150px;
+}
+
+#blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;   /*dnw*/
+  position: relative;
+  padding-bottom: 90px;             /* make space between blogs*/
+}
+
+#blog .blog-img {
+  width: 40%;
+  margin-right: 40px;
+}
+
+#blog img {                 /*dnw*/
+  width: 100%;
+  height: 300px;
+  object-fit: cover;             /*fit object */
+}
+
+#blog .blog-details {
+  width: 50%;
+}
+
+#blog .blog-details a {
+  text-decoration: none;
+  font-size: 11px;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+  transition: 0.3s;                 /*give smooth looks on hover when we move cursor on our text*/
+}
+
+#blog .blog-details a::after {        /* when we use after child element inside perent element a we need and we use position absolute we need on parent element use position reletive*/
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 4px;
+  right: -60px;
+}
+
+#blog .blog-details a:hover {
+  color: #088178;
+}
+
+#blog .blog-details a:hover::after {   /*change color of line next to continue reading*/
+  background-color: #088178;
+}
+
+#blog .blog-box h1 {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  font-size: 70px;
+  font-weight: 700;
+  color: #c9cbce;
+  z-index: -9;                      /* this change prority what show on sceen at first if is value - then will hide under the picture*/
+  
+}
+
+#page-header.about-header {           /*why together?*/
+  background-image: url(images/about/banner.png);
+}
+
+#about-head {
+  display: flex;
+  align-items: center;                /*it make a object in the middle from top to bottom of of section*/ 
+  
+}
+
+#about-head img {
+  width: 50%;           /*img take 100% of section*/
+  height: auto;
+}
+
+#about-head div {
+  padding-left: 40px;
+}
+
+#about-app {
+  text-align: center;
+}
+
+#about-app .video {
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;         /* make a video in the middle of screen*/
+}
+
+#about-app .video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/* contact Page Section */
+
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact-details .details {
+  width: 40%;                       /* add align-items: center and change width to 50%*/ 
+}
+
+#contact-details .details span,
+#form-details form span {
+  font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+  font-size: 26px;
+  line-height: 35px;         /*diffrent between line in space*/
+  padding: 20px 0;
+}
+
+#contact-details .details h3 {
+  font-size: 16px;
+  line-height: 35px;         
+}
+
+#contact-details .details li {
+  list-style: none;               /*delete number at start of listing*/
+  display: flex;
+  padding: 10px 0
+}
+
+#contact-details .details li i {          /*icon settings*/
+  font-size: 14px;
+  padding-right: 22px;
+}
+
+#contact-details .details li p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%x;
+}
+
+#form-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+  
+}
+
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-details form input,         /*our input and textarea have nw same Attribute*/
+#form-details form textarea {                       
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+  background-color: #088178;
+} 
+
+#form-details .people div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+
+#form-details .people div img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+#form-details .people p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+#form-details .people div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+
+
+
+
+
 @media (max-width:799px) {
 
   .section-p1 {
@@ -631,7 +956,87 @@ footer .copyright {
 }
 
 @media (max-width:477px) {
+  .section-p1 {
+    padding: 20px;
+  }
+
   #header {
     padding: 10px 30px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  #hero {
+    padding: 0 20px;
+    background-position: 55%;
+  }
+  #feature {
+    justify-content: space-between;
+  }
+  #product1 .pro {
+    width: 100%;  
+  }
+  #banner {
+    height: 40vh;
+  }
+  #sm-banner .banner-box {
+    height: 40vh; 
+  }
+  #smbanner .banner-box2 {
+    margin-top: 20px;
+  }
+  #banner3 {
+    padding: 0 20px;
+  }
+  #banner3 .banner-box {
+    width: 100%;    
+  }
+  #newsletter {
+    padding: 40px 20px;
+  }
+  #newsletter .form {
+    width: 100%;
+  }
+  .footer .copyright {
+    text-align: start;
+  }
+
+  /*single product Responsive making*/
+
+  #prodetails {
+    display: flex;
+    flex-direction:column;
+  }
+
+  #prodetails .single-product-image {
+    width: 100%;
+    margin-right: 0px;
+  }
+  #prodetails .single-product-details {
+  width: 100%;
+  }
+
+  #blog {
+    padding: 100px 20px 0 20px;
+  }
+
+  #blog .blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #blog .blog-img {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  #blog .blog-details {
+    width: 100%;
   }
 }
