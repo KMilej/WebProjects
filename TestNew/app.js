@@ -1,24 +1,6 @@
-const bar = document.getElementById('bar');
-const close1 = document.getElementById('close');
-const nav = document.getElementById('navbar');
-
-if (bar) {
-    bar.addEventListener('click', () => {
-        nav.classList.add('active');
-    })
-}
-
-if (close1) {
-    close1.addEventListener('click', () => {
-        nav.classList.remove('active');
-    })
-}
-
-// section for cart  Test ...........................................................................................................
-
 let iconCart = document.querySelector('.iconCart');
-let cart = document.querySelector('.cartTest');
-let container = document.querySelector('.containerTest');
+let cart = document.querySelector('.cart');
+let container = document.querySelector('.container');
 let close = document.querySelector('.close');
 
 iconCart.addEventListener('click', function(){
@@ -30,118 +12,11 @@ iconCart.addEventListener('click', function(){
         container.style.transform = 'translateX(0)';
     }
 })
-
-/* close BUTTON */
 close.addEventListener('click', function (){
     cart.style.right = '-100%';
     container.style.transform = 'translateX(0)';
 })
 
-/*
-let products = null;
-
-// get data from file json
-fetch('product.json')
-    .then(response => response.json())
-    .then(data => {
-        products = data;
-        addDataToHTML();
-})
-
-//show dates in list html
-function addDataToHTML(){
-    // remove datas default from HTML
-    let listProductHTML = document.querySelector('.listProduct');
-    listProductHTML.innerHTML = '';        
-
-    // add new datas
-    if(products != null) // if has data
-    {
-        products.forEach(product => {
-            let newProduct = document.createElement('div');
-            newProduct.classList.add('item');
-            newProduct.innerHTML = 
-            `<img src="${product.image}" alt="">
-            <h2>${product.name}</h2>
-            <div class="price">$${product.price}</div>
-            <button onclick="addCart(${product.id})">Add To Cart</button>`;
-
-            listProductHTML.appendChild(newProduct);
-
-        });
-    }
-}
-
-let listcart = [];
-// get cookie data cart
-function checkCart() {
-    let cookieValue = document.cookie
-    .split('; ')
-    .find(row => row.startsWith('listCart='));
-    if(cookieValue){
-        listCart = JSON.parse(cookieValue.split('=')[1]);
-    }
-}
-checkCart()
-
-
-function addCart($idProduct){
-    let productCopy = JSON.parse(JSON.stringify(products));
-    //if this product is not in the cart
-    if(!listCart[$idProduct]){
-        let dataProduct = productCopy.filter(
-            product => product.id == $idProduct
-        )[0];
-        //add data product in cart
-        listCart[$idProduct] = dataProduct;
-        listcart[$idProduct].quantity = 1;
-    } else {
-        // if yhis product is alread in the cart
-        // just will increased the quantity
-        listCart[$idProduct].quantity++;
-    }
-    // this will save datas cart in cookie 
-    // to save this datas cart when we turn of the computer
-    let timeSave = "expires=Thu, 31 Dec 2025 23:59:59 UTC";
-    document.cookie = "listCart="+JSON.stringify(listCart)+"; "+timeSave+"; path=/;";
-    addCartToHTML();
-}
-addCartToHTML();
-
-function addCartToHTML() {
-    //clear data default;
-    let listCartHTML = document.querySelector('.listCart');
-    listCartHTML.innerHTML = '';
-
-    let totalHTML = document.querySelector('totalQuantity');
-    let toalQuantity = 0;
-
-    if(listCart){
-        listCart.forEach(product => {
-            if(product){
-                let newCart = document.createElement('div');
-                newCart.classList.add('item');
-                newCart.innerHTML = 
-            `<img src="${product.image}">
-            <div class="content">
-                <div class="name">${product.name}</div>
-                <div class="price">$${product.price}/ 1 product</div>
-            </div>
-            <div class="quantity">
-                <button>-</button>
-                <span class="value">${product.quantity}</span>
-                <button>+</button>
-            </div>`;
-            listCartHTML.appendChild(newCart);
-            toalQuantity = toalQuantity + product.quantity;
-
-            }
-
-        })
-    }
-    totalHTML.innerText = toalQuantity;
-}
-*/
 
 let products = null;
 // get data from file json
@@ -260,3 +135,5 @@ function changeQuantity($idProduct, $type){
     // reload html view cart
     addCartToHTML();
 }
+
+
