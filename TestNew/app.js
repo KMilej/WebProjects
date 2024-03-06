@@ -1,21 +1,3 @@
-const bar = document.getElementById('bar');
-const close1 = document.getElementById('close');
-const nav = document.getElementById('navbar');
-
-if (bar) {
-    bar.addEventListener('click', () => {
-        nav.classList.add('active');
-    })
-}
-
-if (close) {
-    close.addEventListener('click', () => {
-        nav.classList.remove('active');
-    })
-}
-
-// section for cart  Test ...........................................................................................................
-
 let iconCart = document.querySelector('.iconCart');
 let cart = document.querySelector('.cart');
 let container = document.querySelector('.container');
