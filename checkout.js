@@ -1,4 +1,8 @@
+
+
 let listCart = [];
+// get data cart from cookie
+
 function checkCart(){
         var cookieValue = document.cookie
         .split('; ')
@@ -19,6 +23,7 @@ function addCartToHTML(){
     let totalQuantity = 0;
     let totalPrice = 0;
     // if has product in Cart
+    
     if(listCart){
         listCart.forEach(product => {
             if(product){
