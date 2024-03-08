@@ -1,65 +1,39 @@
 [
     {
         "id": 1,
-<<<<<<< HEAD
         "name": "Koszulka do chodzenia",
         "price": 520,
         "image":"images/Products/f1.jpg"
-=======
-        "name": "Product 1",
-        "price": 520,
-        "image": "images/3.webp"
->>>>>>> a891addaf56c2eecd0661316433fd259a8ef87ab
     },
     {
         "id": 2,
         "name": "Product 2",
         "price": 220,
-<<<<<<< HEAD
         "image": "images/Products/f2.jpg"
-=======
-        "image": "images/2.webp"
->>>>>>> a891addaf56c2eecd0661316433fd259a8ef87ab
     },
     {
         "id": 3,
         "name": "Product 3",
         "price": 250,
-<<<<<<< HEAD
         "image": "images/Products/f3.jpg"
-=======
-        "image": "images/3.webp"
->>>>>>> a891addaf56c2eecd0661316433fd259a8ef87ab
     }
     ,
     {
         "id": 4,
         "name": "Product 4",
         "price": 420,
-<<<<<<< HEAD
         "image": "images/Products/f4.jpg"
-=======
-        "image": "images/4.webp"
->>>>>>> a891addaf56c2eecd0661316433fd259a8ef87ab
     },
     {
         "id": 5,
         "name": "Product 5",
         "price": 120,
-<<<<<<< HEAD
         "image": "images/Products/f5.jpg"
-=======
-        "image": "images/5.webp"
->>>>>>> a891addaf56c2eecd0661316433fd259a8ef87ab
     },
     {
         "id": 6,
         "name": "Product 6",
         "price": 120,
-<<<<<<< HEAD
         "image": "images/Products/f6.jpg"
-=======
-        "image": "images/6.webp"
->>>>>>> a891addaf56c2eecd0661316433fd259a8ef87ab
     }
 ]

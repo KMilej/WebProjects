@@ -17,13 +17,8 @@ if (close1) {
 // section for cart  Test ...........................................................................................................
 
 let iconCart = document.querySelector('.iconCart');
-<<<<<<< HEAD
 let cart = document.querySelector('.cartTest');
 let container = document.querySelector('.containerTest');
-=======
-let cart = document.querySelector('.cart');
-let container = document.querySelector('.container');
->>>>>>> a891addaf56c2eecd0661316433fd259a8ef87ab
 let close = document.querySelector('.close');
 
 iconCart.addEventListener('click', function(){
@@ -35,17 +30,13 @@ iconCart.addEventListener('click', function(){
         container.style.transform = 'translateX(0)';
     }
 })
-<<<<<<< HEAD
 
 /* close BUTTON */
-=======
->>>>>>> a891addaf56c2eecd0661316433fd259a8ef87ab
 close.addEventListener('click', function (){
     cart.style.right = '-100%';
     container.style.transform = 'translateX(0)';
 })
 
-<<<<<<< HEAD
 /*
 let products = null;
 
@@ -151,8 +142,6 @@ function addCartToHTML() {
     totalHTML.innerText = toalQuantity;
 }
 */
-=======
->>>>>>> a891addaf56c2eecd0661316433fd259a8ef87ab
 
 let products = null;
 // get data from file json
