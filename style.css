@@ -1275,6 +1275,7 @@ footer .copyright {
 #product1 .pro {
   margin: 15px;
   cursor: pointer;         /*added*/
+  cursor: pointer;         /*added*/
 }
 #banner {
   height: 20vh;
