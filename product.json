@@ -1,39 +1,39 @@
 [
     {
         "id": 1,
-        "name": "Koszulka do chodzenia",
-        "price": 520,
-        "image":"images/Products/f1.jpg"
+        "name": "Cable rj-45",
+        "price": 1199,
+        "image":"images/Products/item1.jpg"
     },
     {
         "id": 2,
-        "name": "Product 2",
-        "price": 220,
-        "image": "images/Products/f2.jpg"
+        "name": "Brand new computer",
+        "price": 2020,
+        "image": "images/Products/item2.jpg"
     },
     {
         "id": 3,
-        "name": "Product 3",
+        "name": "Super fast mouse",
         "price": 250,
-        "image": "images/Products/f3.jpg"
+        "image": "images/Products/item3.jpg"
     }
     ,
     {
         "id": 4,
-        "name": "Product 4",
-        "price": 420,
-        "image": "images/Products/f4.jpg"
+        "name": "3D Monitor",
+        "price": 920,
+        "image": "images/Products/item4.jpg"
     },
     {
         "id": 5,
-        "name": "Product 5",
-        "price": 120,
-        "image": "images/Products/f5.jpg"
+        "name": "Chair for Pro-gammer",
+        "price": 1200,
+        "image": "images/Products/item5.jpg"
     },
     {
         "id": 6,
-        "name": "Product 6",
-        "price": 120,
-        "image": "images/Products/f6.jpg"
+        "name": "Multi-tasking table",
+        "price": 699,
+        "image": "images/Products/item6.jpg"
     }
 ]

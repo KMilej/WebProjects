@@ -260,3 +260,4 @@ function changeQuantity($idProduct, $type){
     // reload html view cart
     addCartToHTML();
 }
+

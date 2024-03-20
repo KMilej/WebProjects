@@ -7,11 +7,13 @@
 
     <title>Project</title>
     <link rel="stylesheet" href="style.css">
+   
+
 </head>
 <body>
  
     <section id ="header">
-        <a href="#"><img src="images/logo.png"  class="logo" alt=""></a> <!--width="180" height="120" Test-->
+        <a href="#"><img src="images/logo1.png"  class="logo" alt=""></a> <!--width="180" height="120" Test-->
 
         <div>
             <ul id="navbar">
@@ -20,7 +22,7 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li><button class="btnLogin-popup">Login In</button></li>
                 <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
@@ -30,19 +32,147 @@
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </section>
+<!--
+    <section id="window">
 
+        <div class="cover_box">
+            <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                            <input type="email" required>
+                            <label>email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">login</button>
+                    <div class="login-register">
+                        <p>don't have an account? <a href="#" class="register-link">Register</a></p>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <h2>Register</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <input text="email" required>
+                            <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                            <input type="email" required>
+                            <label>email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input type="password" required>
+                        <label>password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Agree to terms & Conditions</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+-->
     <section id="hero">
-        <h4>trade in offer</h4>  
-        <h2>super value</h2>
-        <h1>On all produkts</h1>
-        <p>save more with coupons & up to 70% off!</p>
-        <button><a href="shop.html"><i>Shop Now</i></a></button>    
+        <div class="hero-text">
+            <h4>trade in offer</h4>  
+            <h2>Super Value</h2>
+            <h1>On all produkts</h1>
+            <p>save more with coupons & up to 70% off!</p>
+            <button><a href="shop.html"><i>Shop Now</i></a></button>
+        </div>
+        <div class="login-box">
+            <section id="window">
+
+                <div class="cover_box">
+                    <span class="icon-close"><ion-icon name="close-outline"></ion-icon></span>
+                    <div class="form-box login">
+                        <h2>Login</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                                    <input type="email" required>
+                                    <label>email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                                <input type="password" required>
+                                <label>password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox">Remember me</label>
+                                <a href="#">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn">login</button>
+                            <div class="login-register">
+                                <p>don't have an account? <a href="#" class="register-link">Register</a></p>
+        
+                            </div>
+                        </form>
+                    </div>
+        
+                    <div class="form-box register">
+                        <h2>Register</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                                    <input text="email" required>
+                                    <label>Username</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                                    <input type="email" required>
+                                    <label>email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                                <input type="password" required>
+                                <label>password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label><input type="checkbox">Agree to terms & Conditions</label>
+                                <a href="#">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn">Register</button>
+                            <div class="login-register">
+                                <p>Already have an account? <a href="#" class="login-link">Register</a></p>
+                            </div>
+                        </form>
+                    </div>
+        
+                </div>
+        
+            </section>  
+        </div>
+                
     </section> 
 
     <section id="productscart" class="section-p1">
         <div class="containerTest">
             <header>
-                <h1>LIST PRODUCT</h1>
+                <h1> Products in Stock</h1>
                 <div class="iconCart">
                     <img src="images/icon.png">
                     <div class="totalQuantity">0</div>
@@ -114,93 +244,16 @@
         </div>
     </section>
     
-    <section>
-    <div class="container">
-        <header>
-            <h1>LIST PRODUCT</h1>
-            <div class="iconCart">
-                <img src="icon.png">
-                <div class="totalQuantity">0</div>
-            </div>
-<<<<<<< HEAD
-
-            <!-- Product Listing Page --> 
-
-            <div class="pro">
-                <img src="images/Products/f2.jpg" alt="">
-                <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut t-shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$54</h4>  
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>  <!--we make class cart here inside class-->
-=======
-        </header>
-
-        <div class="listProduct">
-
-            <div class="item">
-                <img src="images/1.webp" alt="">
-                <h2>CoPilot / Black / Automatic</h2>
-                <div class="price">$550</div>
-                <button>Add To Cart</button>
->>>>>>> a891addaf56c2eecd0661316433fd259a8ef87ab
-            </div>
-
-        </div>
-    </div>
-
-    <div class="cart">
-        <h2>
-            CART
-        </h2>
-
-        <div class="listCart">
-
-
-            <div class="item">
-                <img src="images/1.webp">
-                <div class="content">
-                    <div class="name">CoPilot / Black / Automatic</div>
-                    <div class="price">$550 / 1 product</div>
-                </div>
-                <div class="quantity">
-                    <button>-</button>
-                    <span class="value">3</span>
-                    <button>+</button>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="buttons">
-            <div class="close">
-                CLOSE
-            </div>
-            <div class="checkout">
-                <a href="checkout.html">CHECKOUT</a>
-            </div>
-        </div>
-    </div>
-    </section>
 
     <section id="banner" class="section-m1">
         <h4>Repair Service</h4>
-        <h2>Up to <span>70% off</span> - All t-shirt & Accessories</h2>
+        <h2>Up to <span>70% off</span> - All Computer accessories & Gamming Chairs </h2>
         <button class="normal">Explore more</button>
     </section>
 
     <section id="product1" class="section-p1">
         <h2> New Arrivals</h2> 
-        <p>Summer collection New morden Design</p>  
+        <p>These products have just been released, don't miss them </p>  
         <div class="pro-container">
             <div class="pro">
                 <img src="images/Products/n1.jpg" alt="">
@@ -356,12 +409,12 @@
             <h3>Winter collection -50%</h3>
         </div>
         <div class="banner-box banner-box2">
-            <h2>New Footwear Collection</h2>
+            <h2>New Progammer Collection</h2>
             <h3>Spring/Sumemer Sales</h3>
         </div>
         <div class="banner-box banner-box3">
-            <h2>T-SHIRT</h2>
-            <h3>New trendy tops</h3>
+            <h2>Just today</h2>
+            <h3>New trendy Pads</h3>
         </div>
     </section> 
 
@@ -379,11 +432,11 @@
     <section>
     <footer class="section-p1">
         <div class="col">
-            <img class="logo" src="images/logo.png" class="logo" alt="">
+            <img class="logo" src="images/logo1.png" width="30%" class="logo" alt="">
             <h4>Contact</h4>
-            <p><strong>Adress:</strong></p>
-            <p><strong>Phone:</strong></p>
-            <p><strong>Opening Hours:</strong></p>
+            <p><strong>Adress: St Brycedale Campus, St Brycedale Ave, Kirkcaldy KY1 1EX</strong></p>
+            <p><strong>Phone: 0344 248 0115</strong></p>
+            <p><strong>Opening Hours: Mon-Fri 8.30 - 17.00 </strong></p>
             <div class="follow">
                 <h4>Follow Us</h4>
                 <div class="icon">
@@ -428,6 +481,9 @@
     </footer>
     </section>
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>
+    <script src="scriptli.js"></script>
 </body>
 </html>
